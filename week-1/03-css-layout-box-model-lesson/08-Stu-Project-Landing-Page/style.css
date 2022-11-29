@@ -1,0 +1,43 @@
+* {
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: lightgray;
+
+
+
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+h1 {
+    background-color: purple;
+    text-align: center;
+    color: lightgray;
+}
+
+navbar {
+    position: relative;
+    left: 625px;
+
+    color: black;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    border: 10px solid lightpink;
+    padding: 10px;
+
+}
+
+#p1 {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: purple;
+
+}

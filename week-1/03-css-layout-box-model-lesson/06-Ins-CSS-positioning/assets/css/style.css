@@ -1,0 +1,45 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  border: 10px solid darkblue;
+  background-color: lightblue;
+}
+
+section {
+  height: 400px;
+  width: 80%;
+  margin: 30px auto;
+  border: 10px solid black;
+}
+
+/* Relative positioning */
+#relative-box {
+  position: relative;
+  top: 200px;
+}
+
+/* Absolute positioning */
+#absolute-section {
+  position: fixed;
+  background-color: pink;
+  z-index: 10;
+  bottom: 0px;
+}
+
+#absolute-box {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Fixed positioning */
+#fixed-box {
+  position: fixed;
+  top: 0;
+  right: -62px;
+}
