@@ -70,6 +70,19 @@ footer {
 
 /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
 
+
+}
+
+main ul li:nth-child(odd) a {
+  color: rgb(65, 216, 179);
+
+}
+
+main ul li a [href$=".css"] {
+  content: "❤️";
+  font-size: 1em;
+}
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;

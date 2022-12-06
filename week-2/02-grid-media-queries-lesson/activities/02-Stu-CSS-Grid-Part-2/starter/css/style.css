@@ -58,8 +58,7 @@ body {
 
 
 
-/* Navigation CSS */
-/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
 #navBar {
   display: flex;
   flex-direction: row;
@@ -122,3 +121,72 @@ h4 {
   margin: 0px 0px;
   color: #636364;
 }
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "bo b p"
+  "c c p"
+  "d d d"; 
+  
+} 
+
+#bookcases {
+  grid-area: bo;
+  background-image: url("../images/bookcases@2x.png");
+
+}
+#bedroom {
+  grid-area: b;
+  background-image: url("../images/beds@2x.png");
+}
+
+#couches {
+  grid-area: c;
+  background-image: url("../images/couch@2x.png");
+}
+
+#patio {
+  grid-area: p;
+  background-image: url("../images/patio@2x.png");
+}
+
+#desks {
+  grid-area: d;
+  background-image: url("../images/desks@2x.png");
+}
+
+
+
+
+
+
+
+
+

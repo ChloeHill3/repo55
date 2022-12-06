@@ -7,14 +7,15 @@ Work with a partner to implement the following user story:
 ## Instructions
 
 * Create two CSS Variables:
-  * One for any repeated color value
-  * One for any repeated border radius value
+  * One for any repeated color value done
+  * One for any repeated border radius value done
 
 ### 🏆 Bonus
 
 If you have completed the activity and want to further your knowledge, work through the following challenge with your partner:
 
 * What does the term DRY mean in web development?
+Don't repeat yourself
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

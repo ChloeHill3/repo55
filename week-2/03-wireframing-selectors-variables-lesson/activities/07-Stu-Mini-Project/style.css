@@ -1,0 +1,21 @@
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.card{
+display: grid;
+grid-column: auto auto auto;
+grid-row: 80px 100px;
+justify-content: space-evenly;
+column-gap: 5px;
+
+}
+
+.card h1 {
+position: relative;
+margin-top: 30px;
+align-content: center;
+
+}
+
