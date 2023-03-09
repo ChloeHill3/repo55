@@ -53,3 +53,50 @@ section {
 section h2 {
   font-size: 50px;
 }
+
+
+
+.mountBackground a{
+  display: block;
+
+
+}
+.mainLogo {
+  color: #fcbd20;
+  font-family: cursive;
+  font-size: larger;
+  text-shadow: black 1px 1px;
+
+}
+.nav-item {
+  margin: 0px 15px;
+  margin-left: auto;
+  margin-right: 0 !important;
+}   
+.display-4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}

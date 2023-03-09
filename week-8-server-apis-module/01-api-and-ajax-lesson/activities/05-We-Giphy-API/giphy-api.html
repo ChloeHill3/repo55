@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+
+
+  <button id="next">Next</button>
+  <button id="prev">Prev</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    render();
+
+    // Example queryURL for Giphy API
+
+    let offset = 0;
+
+    function render(){
+
+      document.querySelector("#imageContainer").innerHTML = "";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=i1sEpUmWQ5PoA0gSadQTJi1xf42Ux0a8&q=cute&limit=1&rating=pg&offset=1";
+  
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        console.log(response);
+        let img = document.createElement("img");
+  
+        img.src = response.data[0].images["original"].url
+        document.querySelector("#imageContainer").appendChild(img);
+        console.log (response)
+      })
+
+    }
+
+    document.querySelector("#next").addEventListener("click", function(){
+      if (offset >0)
+      offset--
+      render()
+    })
+    document.querySelector("#nprev").addEventListener("click", function(){
+      if (offset >0)
+      offset--
+      render()
+    })
+  
+  </script>
+
+</body>
+
+</html>

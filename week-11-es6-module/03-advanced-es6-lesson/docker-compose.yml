@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  03advancedes6lesson:
+    image: 03advancedes6lesson
+    build:
+      context: .
+      dockerfile: ./Dockerfile

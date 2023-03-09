@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Cat Button</title>
+</head>
+
+<body>
+  <button id="cat-button">magical cat button</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Providing an on click response for cat-button
+    $("#cat-button").on("click", function () {
+
+      // Inserting a random giphy 
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=i1sEpUmWQ5PoA0gSadQTJi1xf42Ux0a8&tag=cats&rating=pg";
+
+      // Getting the random giphy from the url http request fetch will return a promise, which means it is thenable
+      feth(queryURL)
+        //
+        .then(res => res.json())
+
+
+      //function for targeting the image size
+      .then(function (response) {
+
+        // gong into the URL's code to source the image size
+        var imageUrl = response.data.images.original.url;
+
+        // jquery for image in html
+        var catImage = $("<img>");
+
+        // setting attributes for the cat images
+        catImage.attr("src", imageUrl);
+        catImage.attr("alt", "cat image");
+
+        //adding it to the page and putting to before the other documents already inserted (prepending)
+        $("#images").prepend(catImage);
+      });
+    })
+  </script>
+</body>
+
+</html>
